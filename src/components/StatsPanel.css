@@ -1,0 +1,24 @@
+.stats-panel, .transaction-form {
+  padding: 1.5rem;
+  background: var(--surface);
+  border: 1.5px solid var(--primary);
+  border-radius: .9rem;
+  box-shadow: var(--shadow);
+}
+
+.panel-heading { margin-bottom: 1.25rem; }
+.eyebrow { display: block; margin-bottom: .25rem; color: var(--primary); font-size: .67rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.panel-title { margin: 0; color: var(--ink); font-size: 1.2rem; line-height: 1.2; font-weight: 800; letter-spacing: -.04em; }
+.stats-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .85rem; }
+.stat-item { min-height: 6.7rem; padding: 1rem; border-radius: .65rem; background: var(--surface-muted); }
+.stat-label { color: #555667; font-size: .68rem; font-weight: 800; letter-spacing: .04em; line-height: 1.25; text-transform: uppercase; }
+.stat-value { margin-top: .55rem; color: var(--primary); font-family: 'DM Mono', monospace; font-size: 1.65rem; font-weight: 500; letter-spacing: -.08em; }
+.stat-item.status { grid-column: 1 / -1; min-height: auto; border-left: 4px solid; }
+.stat-item.status.is-valid { border-color: var(--mint); }
+.stat-item.status.is-invalid { border-color: var(--danger); }
+.stat-value.valid { color: var(--mint); font-family: 'Manrope', sans-serif; font-size: 1rem; font-weight: 800; letter-spacing: 0; }
+.stat-value.invalid { color: var(--danger); font-family: 'Manrope', sans-serif; font-size: 1rem; font-weight: 800; letter-spacing: 0; }
+.mine-button, .submit-button { width: 100%; display: inline-flex; align-items: center; justify-content: center; gap: .55rem; min-height: 3rem; margin-top: 1.25rem; padding: .75rem 1rem; border: 0; border-radius: .45rem; background: linear-gradient(100deg, var(--primary), #08799a); color: white; cursor: pointer; font-size: .95rem; font-weight: 800; transition: transform .18s ease, box-shadow .18s ease; }
+.mine-button:hover, .submit-button:hover:not(:disabled) { transform: translateY(-1px); box-shadow: 0 8px 16px rgba(54, 73, 204, .24); }
+.mine-button:focus-visible, .submit-button:focus-visible { outline: 3px solid rgba(75,76,224,.28); outline-offset: 3px; }
+.mine-note { margin: .7rem 0 0; color: var(--muted); font-size: .72rem; text-align: center; }

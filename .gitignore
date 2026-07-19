@@ -1,0 +1,11 @@
+/node_modules
+/build
+/artifacts
+/cache
+/data
+blockchain.json
+blockchain.json.*
+.server-port
+.env
+*.log
+npm-debug.log*
